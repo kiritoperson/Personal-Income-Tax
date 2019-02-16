@@ -1,0 +1,48 @@
+<!--index.wxml-->
+<include src="/includes/top.wxml" />
+<!--列表-->
+
+<view class='list'>
+  <label class="weui-cells__title">个税前收入（元）</label>
+  <view class="weui-cell__bd">
+    <input class="weui-input" type='digit' placeholder="请输入你的个税前收入"  bindinput='userNameInput' name='userName'></input>
+  </view>
+
+  <!--列表说明项-->
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell">
+      <view class="weui-cell__bd">社保汇缴基数（元）</view>
+      <input class="weui-cell__ft ft2" type='digit' placeholder="{{userName}}" bindinput='socialInput'></input>
+    </view>
+  </view>
+
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell">
+      <view class="weui-cell__bd">公积金汇缴基数（元）</view>
+      <input class="weui-cell__ft ft3" type='digit' placeholder="{{userName}}" bindinput='commonInput'></input>
+    </view>
+  </view>
+
+  <view class="weui-cells weui-cells_after-title cells-end">
+    <view class="weui-cell">
+      <view class="weui-cell__bd">起征点（元）</view>
+      <view class="weui-cell__ft">
+        <radio-group class="radio-group" bindchange="radioChange">
+          <label class="radio" wx:for="{{items}}">
+            <radio value="{{item.name}}" checked="{{item.checked}}" color='#fff' />{{item.value}}
+          </label>
+        </radio-group>
+      </view>
+    </view>
+  </view>
+  <!--说明-->
+  <view class='explain'>
+    <text>*中国员工3500元，外籍(包括港，澳，台)员工4800。
+            *10月1日起后，个税起征点提到5000元</text>
+  </view>
+
+  <view class='count'>
+    <button bindtap='count' class="weui-btn" type="primary">计算</button>
+  </view>
+  <image class='footer' src="/images/footer.png"></image>
+</view>

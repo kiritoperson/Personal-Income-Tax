@@ -1,0 +1,9 @@
+<view class='cell'>
+  <view class="logo">
+    <image class='logo-image' src="/images/fire.png" />
+    <text>官方出品</text>
+  </view>
+  <view class='logo-button'>
+    <button class="share" size="mini" open-type="share">分享</button>
+  </view>
+</view>

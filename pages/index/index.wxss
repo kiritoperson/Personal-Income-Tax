@@ -1,0 +1,124 @@
+/*list*/
+
+.list {
+  margin-left: 46rpx;
+  margin-right: 46rpx;
+  margin-top: 66rpx;
+}
+
+.weui-cells__title, .weui-cell__bd {
+  font-size: 24rpx;
+  color: #000;
+}
+
+.weui-cells__title {
+  padding-left: 20rpx;
+}
+
+.weui-input {
+  height: 2.5em;
+  font-size: 36rpx;
+  margin-left: 20rpx;
+}
+
+.ft2 {
+  margin-left: 30rpx;
+}
+
+/*list说明项*/
+
+.weui-cell {
+  padding: 25rpx 19rpx;
+}
+.weui-cell {
+  padding-top: 35rpx;
+}
+.weui-cell__ft {
+  font-size: 24rpx;
+}
+
+.radio {
+  color: #000;
+}
+
+.explain {
+  margin-top: 30rpx;
+  font-size: 24rpx;
+  color: #bbb;
+  margin-left: 20rpx;
+}
+
+.count {
+  margin-top: 70rpx;
+  padding: 0 20rpx;
+}
+
+.count button {
+  background-color: #4795ea;
+}
+
+.button-hover[type=primary] {
+  background-color: #4795ea;
+}
+
+.footer {
+  width: 100%;
+  height: 332rpx;
+}
+
+radio .wx-radio-input.wx-radio-input-checked::before {
+  border-radius: 50%;
+  width: 19rpx;
+  height: 19rpx;
+  text-align: center;
+  font-size: 0rpx; /* 对勾大小 去掉 */
+  border: 5rpx solid #4795ea;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}
+
+radio {
+  border-radius: 50%;
+  width: 22rpx; /* 最好是4的倍数，不然会不在中间 */
+  height: 22rpx;
+  border: 2rpx solid #666; /* 设置边框（外圆） */
+  font-size: 0; /* 让边框重合 */
+}
+
+radio .wx-radio-input {
+  border-radius: 50%;
+  width: 22rpx;
+  height: 22rpx;
+  border: none; /* 替换边框（隐藏原有边框） */
+  margin-bottom: 20rpx;
+}
+
+.weui-cell:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1rpx solid #d9d9d9;
+  color: #d9d9d9;
+}
+
+.cells-end:after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  border-bottom: 1rpx solid #d9d9d9;
+  color: #d9d9d9;
+}
+
+.ft2 {
+  margin-left: 60rpx;
+}
+
+.ft3 {
+  margin-left: 30rpx;
+}

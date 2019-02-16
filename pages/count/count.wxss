@@ -1,0 +1,103 @@
+/* pages/count/count.wxss */
+
+page {
+  overflow: hidden;
+  position: fixed;
+  background: url(https://i.ibb.co/CBjvH1d/bg.png);
+  margin: 0px;
+  /*下面的是关键的设置100%显示*/
+  background-size: auto 100%;
+}
+
+.center {
+  display: inline-block;
+  margin-top: 26rpx;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  width: 696rpx;
+  height: 880rpx;
+  background-image: url('https://i.ibb.co/Tc8gLQQ/center.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer, .cloud {
+  width: 100%;
+  height: 270rpx;
+  z-index: 0;
+}
+
+/*center-top*/
+
+.center-top {
+  width: 696rpx;
+  height: 264rpx;
+  margin-top: 56rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.salary-mouth {
+  font-size: 35rpx;
+  color: #000;
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  margin-bottom: 11rpx;
+}
+.get, .yuan, .weui-cell__bd {
+  font-size: 25rpx;
+  color: #616161;
+}
+
+.get-salary {
+  font-size: 88rpx;
+  color: #ff4902;
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+}
+
+.get2 {
+  display: flex;
+  align-items: flex-end;
+}
+
+.yuan {
+  margin-bottom: 25rpx;
+}
+
+/*center-bottom*/
+
+.center-bottom {
+  width: 616rpx;
+  height: 372rpx;
+  margin: 80rpx 40rpx;
+}
+
+.weui-cell {
+  padding: 12rpx 30rpx;
+}
+
+.weui-cell__ft {
+  color: #000;
+  font-size: 28rpx;
+}
+
+.git-end {
+  font-size: 32rpx;
+  color: #ff4902;
+  font-weight: bold;
+}
+
+.count {
+  margin-top: 46rpx;
+  padding: 0 30rpx;
+}
+
+.count button {
+  background-color: #4795ea;
+}
+
+.button-hover[type=primary] {
+  background-color: #4795ea;
+}
